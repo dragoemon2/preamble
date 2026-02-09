@@ -106,22 +106,22 @@
 \algrenewcommand\textproc{}
 
 \lstset{
-  basicstyle={\ttfamily},
-  identifierstyle={\small},
-  commentstyle={\smallitshape},
-  keywordstyle={\small\bfseries},
-  ndkeywordstyle={\small},
-  stringstyle={\small\ttfamily},
-  frame={tb},
-  breaklines=true,
-  columns=[l]{fullflexible},
-  numbers=left,
-  xrightmargin=0zw,
-  xleftmargin=3zw,
-  numberstyle={\scriptsize},
-  stepnumber=1,
-  numbersep=1zw,
-  lineskip=-0.5ex
+    basicstyle={\ttfamily},
+    identifierstyle={\small},
+    commentstyle={\smallitshape},
+    keywordstyle={\small\bfseries},
+    ndkeywordstyle={\small},
+    stringstyle={\small\ttfamily},
+    frame={tb},
+    breaklines=true,
+    columns=[l]{fullflexible},
+    numbers=left,
+    xrightmargin=0zw,
+    xleftmargin=3zw,
+    numberstyle={\scriptsize},
+    stepnumber=1,
+    numbersep=1zw,
+    lineskip=-0.5ex
 }
 
 %================================================
@@ -130,11 +130,11 @@
 
 % 1. 複素積分 (積分路の矢印，極の×印，分岐の波線)
 \tikzset{->-/.style={decoration={
-  markings,
-  mark=at position #1 with {\arrow{>}}},postaction={decorate}}}
+    markings,
+    mark=at position #1 with {\arrow{>}}},postaction={decorate}}}
 \tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
-  %default radius will be 1pt. 
-  cross/.default={4pt}}
+    %default radius will be 1pt. 
+    cross/.default={4pt}}
 \tikzset{waved/.style={decorate, decoration={snake, segment length=1mm, amplitude=0.3mm}}}
 
 
@@ -183,14 +183,14 @@
   \par\vspace{1ex}
 }
 \newenvironment{claimproof}{
-  \par\pushQED{\qed}% amsthmのQEDスタック機能を利用
-  \renewcommand{\qedsymbol}{$\diamondsuit$}% 終了記号をダイヤに変更
-  \begin{list}{}{%
-    \setlength{\leftmargin}{1.5em}% インデント幅
-    \setlength{\labelwidth}{0pt}%
-    \setlength{\itemindent}{0pt}%
-  }
-  \item[\hskip \labelsep \itshape \!\!\!\!\text{Proof.}]% 見出し (証明.)
+    \par\pushQED{\qed}% amsthmのQEDスタック機能を利用
+    \renewcommand{\qedsymbol}{$\diamondsuit$}% 終了記号をダイヤに変更
+    \begin{list}{}{%
+        \setlength{\leftmargin}{1.5em}% インデント幅
+        \setlength{\labelwidth}{0pt}%
+        \setlength{\itemindent}{0pt}%
+    }
+    \item[\hskip \labelsep \itshape \!\!\!\!\text{Proof.}]% 見出し (証明.)
 }{
   \popQED\end{list}
 }
@@ -211,6 +211,7 @@
 \author{dragoemon}
 \date{\today}
 \maketitle
+
 
 
 
