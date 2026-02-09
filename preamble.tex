@@ -44,6 +44,8 @@
 %================================================
 % 修正パッチ
 %================================================
+
+%--- physicsパッケージのdvコマンド修正 ---
 \DeclareDocumentCommand\derivative{ s o m g d() }{
     \IfBooleanTF{#1}
     {\let\fractype\flatfrac}
@@ -91,6 +93,13 @@
 \newcommand{\const}{\mathrm{const}}
 \newcommand{\isomto}{\xrightarrow{\sim}}
 \newcommand{\co}{\colon}
+
+%--- 括弧 ---
+\DeclarePairedDelimiter{\ang}{\langle}{\rangle} % < > angle brackets
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor} % floor function
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil} % ceil function
+\DeclarePairedDelimiter{\round}{\lfloor}{\rceil}
+\DeclarePairedDelimiterX{\set}[2]{\lbrace}{\rbrace}{#1\,\delimsize\vert\,#2}
 
 %--- アルゴリズム ---
 \renewcommand{\Return}{\State\algorithmicreturn\ }
@@ -209,6 +218,7 @@
 \author{dragoemon}
 \date{\today}
 \maketitle
+
 
 
 \end{document}
