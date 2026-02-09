@@ -7,8 +7,8 @@
 \usepackage{physics}   % 物理系コマンド (dv, pdv, ketなど)
 \usepackage{stmaryrd}  % 特殊記号 (llbracketなど)
 \usepackage[mathscr]{eucal} % 花文字 (\mathscr)
-\usepackage{colors}   % 色指定
-\usepackage{cancel}   % 打ち消し線
+\usepackage{color}   % 色指定
+\usepackage{cancel}
 
 %--- グラフィック・描画 ---
 \usepackage{graphicx}
@@ -56,17 +56,6 @@
     }
     {\fractype{\diffd \IfNoValueTF{#2}{}{^{#2}} #3}{\diffd #4\IfNoValueTF{#2}{}{^{#2}}}\IfValueT{#5}{(#5)}}
 }
-
-\makeatletter
-\tikzset{
-  every node/.style={
-    transform shape,
-    append after command={
-      \pgfextra{\let\tikz@transform=\pgfutil@empty}
-    }
-  }
-}
-\makeatother
 
 %================================================
 % マクロ定義 (Implemented by vll)
