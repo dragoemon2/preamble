@@ -177,10 +177,10 @@
 
 % claim環境
 \newenvironment{claim}[1][]{
-  \par\vspace{1ex}
-  \noindent\textbf{\underline{claim}}\ifstrempty{#1}{}{ (#1)}\ \itshape% 見出し
+    \par\vspace{1ex}
+    \noindent\textbf{\underline{claim}}\ifstrempty{#1}{}{ (#1)}\ \itshape% 見出し
 }{
-  \par\vspace{1ex}
+    \par\vspace{1ex}
 }
 \newenvironment{claimproof}{
     \par\pushQED{\qed}% amsthmのQEDスタック機能を利用
@@ -192,7 +192,7 @@
     }
     \item[\hskip \labelsep \itshape \!\!\!\!\text{Proof.}]% 見出し (証明.)
 }{
-  \popQED\end{list}
+    \popQED\end{list}
 }
 
 
@@ -211,8 +211,6 @@
 \author{dragoemon}
 \date{\today}
 \maketitle
-
-
 
 
 \end{document}
